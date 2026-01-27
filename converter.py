@@ -45,14 +45,58 @@ def time():
             print("-----------------------------")
             
 def volume():
-    pass
+    print("1. Liters to milileter")
+    print("2. Milileters to Leter")
+    option = int(input("Choose any one option : "))
+    match option:
+        case 1:
+            liter = float(input("Enter leter value : "))
+            ml = liter*1000
+            print(f"{liter} L = {ml} ml")
+        case 2:
+            ml = float(input("Enter ml value : "))
+            l = ml/1000
+            print(f"{ml} ml = {l} L" )
 
 def length():
-    pass
-
+    print("1. meter to Km")
+    print("2. Km to meter")
+    print("3. meter to inches")
+    print("4. inches to meter")
+    option = int(input("Choose any one option : "))
+    match option:
+        case 1:
+            meter = float(input("Enter meter value : "))
+            km = meter * 0.001000
+            print(f"{meter} m = {km} km")
+        case 2:
+            km = float(input("Enter km value : "))
+            meter = km * 1000
+            print(f"{km} Km = {meter} m")
+        case 3:
+            meter = float(input("Enter meter value : "))
+            inches = meter * 39.370079
+            print(f"{meter} m = {inches} inch")
+        case 4:
+            inches = float(input("Enter inch value : "))
+            meter = inches * 0.025400
+            print(f"{inches} inch = {meter} m")            
+            
 def temprature():
-    pass
-
+    print("1. Celcius to Fohrenhite")
+    print("2. Celcius to Kelvin")
+    print("3. Fohrenhite to celcius")
+    print("4. Fohrenhite to kelvin")
+    print("5. Kelvin to celcius")
+    print("6. Kelvin to Fohrenhite")
+    option = int(input("Choose any one option : "))
+    match option:
+        case 1:
+            c = float(input("Enter celcius value : "))
+            f = c * 33.800000
+            print(f"{c} celcius = {f} Fohrenhite")
+        case 2:
+            pass
 def mass():
     pass
 
