@@ -46,18 +46,22 @@ while True:
     print("3. Area of an Equilateral Triangle")
     print("4. Area of an Isosceles Triangle")
     print("5. Area of Triangle with Three Sides (Heron’s Formula)")
-    op = int(input("Choice any one : "))
+    print("For exit enter blank")
+    op = input("Choice any one : ")
     match op:
-        case 1 :
+        case "1" :
             simple()
-        case 2:
+        case "2":
             rightAngle()
-        case 3:
+        case "3":
             Equilateral()
-        case 4:
+        case "4":
             Isosceles()
-        case 5:
+        case "5":
             herons()
-        case _ :
-            print("No match")
+        case "":
+            print("--------")
+            print("Exited")
+            print("--------")
+            break
         
