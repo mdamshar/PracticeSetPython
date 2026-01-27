@@ -4,7 +4,6 @@ def simple():
     area = 0.5 * b * h 
     print("-----------------------")
     print(f"Area of rectangle is : {area} cm square.")
-    print("-----------------------")
 
 def rightAngle():
     b = float(input("Enter base value (in cm) : "))
